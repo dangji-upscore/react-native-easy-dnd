@@ -20,16 +20,7 @@
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
-    "clean": "./node_modules/rimraf/bin.js lib",
-    "format": "prettier --write \"{src,__tests__}/**/*.ts\" --single-quote --trailing-comma es5",
-    "lint": "tslint --force --format verbose \"src/**/*.ts\"",
-    "prepublishOnly": "npm run build",
-    "prebuild": "npm run clean && npm run format && npm run lint && echo Using TypeScript && tsc --version",
-    "build": "./node_modules/gulp/bin/gulp.js compile",
-    "test": "jest",
-    "coverage": "jest --coverage",
-    "watch": "./node_modules/gulp/bin/gulp.js watch",
-    "watch:test": "jest --watch"
+    "build": "gulp compile"
   },
   "dependencies": {
     "create-react-context": "^0.2.3"
