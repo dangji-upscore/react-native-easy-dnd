@@ -1,7 +1,4 @@
 {
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "name": "react-native-easy-dnd-1",
   "version": "1.0.3",
   "description": "react-native-easy-dnd",
